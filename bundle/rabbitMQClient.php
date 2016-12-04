@@ -18,10 +18,10 @@ switch($argv[1])
 {
 
   case "deployBundle":
+  case "rollbackBundle":
 	//specify which branch to deploy to
 	$request['branch'] = $argv[3];
 	break;
-	
 }
 
 $response = $client->send_request($request);
